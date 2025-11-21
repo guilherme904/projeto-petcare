@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal - Clínica PetCare</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos específicos para o menu principal */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .menu-item {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none; /* Para usar o <a> como item */
+            display: block;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .menu-item h3 {
+            color: #6bb56b;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        .menu-icon {
+            font-size: 40px;
+            color: #8bc073;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Sistema Veterinário - Clínica PetCare</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="ativo" href="menu.html">Menu</a></li>
+                    <li><a href="cadastro_cliente.html">Cadastro Cliente</a></li>
+                    <li><a href="cadastro_animal.html">Cadastro Animal</a></li>
+                    <li><a href="animais.html">Animais</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Bem-vindo ao Sistema PetCare</h2>
+            <p>Selecione uma opção abaixo para começar.</p>
+
+            <div class="menu-grid">
+                <a href="cadastro_cliente.html" class="menu-item">
+                    <span class="menu-icon">👤</span>
+                    <h3>Novo Cliente</h3>
+                    <p>Cadastrar um novo proprietário.</p>
+                </a>
+
+                <a href="cadastro_animal.html" class="menu-item">
+                    <span class="menu-icon">🐾</span>
+                    <h3>Novo Animal</h3>
+                    <p>Registrar um novo paciente.</p>
+                </a>
+
+                <a href="animais.html" class="menu-item">
+                    <span class="menu-icon">📋</span>
+                    <h3>Ver Animais</h3>
+                    <p>Consultar a lista de pacientes.</p>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span class="menu-icon">🩺</span>
+                    <h3>Agendar Consultas</h3>
+                    <p>Gerenciar horários e atendimentos.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
