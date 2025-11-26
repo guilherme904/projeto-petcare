@@ -8,12 +8,12 @@
 }
 
 body {
-    background-color: #f5f7f8; /* Fundo cinza claro */
+    background-color: #f5f7f8;
 }
 
 
 header {
-    background-color: #A8D08D; /* Verde claro principal */
+    background-color: #A8D08D;
     padding: 10px 0;
 }
 
@@ -54,7 +54,7 @@ nav a:hover {
 
 nav a.ativo {
     background-color: #ffffff;
-    color: #8bc073; /* Cor do link ativo */
+    color: #8bc073;
 }
 
 
@@ -290,4 +290,5 @@ input:focus, select:focus, textarea:focus {
     .menu-grid {
         gap: 15px;
     }
+
 }
